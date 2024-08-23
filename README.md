@@ -78,7 +78,7 @@ A simple Django-based blog application where users can create, read, update, and
 
 ## License
 
-This project is licensed under the MIT License - see the [License file](License) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
