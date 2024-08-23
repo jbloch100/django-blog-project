@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://127.0.0.1:8000/blog/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog posts</title>
+	<link rel="stylesheet" href="./homepage_screenshot_files/bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="http://127.0.0.1:8000/blog/#">My Blog</a>
+			<div class="ml-auto">
+				
+					<form method="POST" action="http://127.0.0.1:8000/accounts/logout/">
+						<input type="hidden" name="csrfmiddlewaretoken" value="ArBOkvNzvnT7N6Ci9f2s5JNkuUyxEtaEPMDaTfwBgFqNv5ZADEEJ3zaeSYvxN9Zk">
+						<button type="submit" class="btn btn-outline-danger">Logout</button>
+				
+			</form></div>
+		</nav>
+		<h1 class="mb-4">Blog Posts</h1>
+		<div class="list-group">
+			
+				<a href="http://127.0.0.1:8000/blog/post/3/" class="list-group-item list-group-item-action">
+					<h5 class="mb-1">Exploring Python</h5>
+					<small>by jonbloch on August 17, 2024, 5:18 p.m.</small>
+				</a>
+			
+				<a href="http://127.0.0.1:8000/blog/post/2/" class="list-group-item list-group-item-action">
+					<h5 class="mb-1">Django Tips and Tricks</h5>
+					<small>by jonbloch on August 17, 2024, 5:15 p.m.</small>
+				</a>
+			
+				<a href="http://127.0.0.1:8000/blog/post/1/" class="list-group-item list-group-item-action">
+					<h5 class="mb-1">My First Blog Post</h5>
+					<small>by jonbloch on August 17, 2024, 5:13 p.m.</small>
+				</a>
+			
+		</div>
+		<div class="mt-4">
+			<a href="http://127.0.0.1:8000/blog/post/new/" class="btn btn-primary">New Post</a>
+		</div>
+	</div>
+
+	<script src="./homepage_screenshot_files/bootstrap.bundle.min.js.download">
+		
+	</script>
+
+</body></html>

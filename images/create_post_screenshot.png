@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:8000/blog/post/new/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>New Post</title>
+	<link rel="stylesheet" href="./create_post_screenshot_files/bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<h1>New Post</h1>
+		<form method="POST">
+			<input type="hidden" name="csrfmiddlewaretoken" value="mS7fZRhV1WsYVvYlfyYaLyPJn2FUQW8BBd9ByB0XMeZEDulDJXArJocDL6CUZCXh">
+			<div class="mb-3">
+				<label for="title" class="form-label">Title</label>
+				<input type="text" class="form-control" id="title" name="title" value="" required="">
+			</div>
+			<div class="mb-3">
+				<label for="content" class="form-label">Content</label>
+				<textarea class="form-control" id="content" name="content" rows="5" required=""></textarea>
+			</div>
+			<button type="submit" class="btn btn-success">Save</button>
+			<a href="http://127.0.0.1:8000/blog/" class="btn btn-secondary">Cancel</a>
+		</form>
+	</div>
+
+	<script src="./create_post_screenshot_files/bootstrap.bundle.min.js.download"></script>
+
+</body></html>
