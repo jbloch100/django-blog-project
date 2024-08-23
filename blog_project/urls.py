@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.shortcuts import redirect
 from django.contrib.auth import views as auth_views
 from blog import views
 
@@ -24,5 +25,9 @@ urlpatterns = [
     path('accounts/login/', auth_views.LoginView.as_view(), name='login'),
     path('accounts/logout/', auth_views.LogoutView.as_view(next_page='login'), name='logout'),   # Redirect to login page after logout
     path('accounts/signup/', views.signup_view, name='signup'), # Add the sign-up URL
-    path('', include('blog.urls')), # Include URLs from the blog app
+
+    # Redirect the root URL to the login  page if not authenticated
+    path('', lambda request: redirect('login')),    # Redirect root URL to login page
+
+    path('blog/', include('blog.urls')), # Include URLs from the blog app
 ]
