@@ -71,10 +71,10 @@ A simple Django-based blog application where users can create, read, update, and
 ## Screenshots
 
 ### Homepage
-![Homepage Screenshot](path/to/homepage_screenshot.png)
+![Homepage Screenshot](images/homepage_screenshot.png)
 
 ### Create Post
-![Create Post Screenshot](path/to/create_post_screenshot.png)
+![Create Post Screenshot](images/create_post_screenshot.png)
 
 ## License
 
