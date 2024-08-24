@@ -3,6 +3,7 @@ from django.http import HttpResponseForbidden
 from .models import Post
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib.auth.forms import UserCreationForm
+from .forms import PostForm
 
 # Restricting access to superusers only
 def superuser_required(user):
@@ -42,7 +43,7 @@ def post_edit(request, pk):
 		return redirect('post_detail', pk=post.pk)
 	else:
 		form = PostForm(instance=post)
-	return render(request, 'blog/post_form.html', {'form': form})
+	return render(request, 'blog/post_form.html', {'form': form, 'post': post})
 
 @login_required
 def post_delete(request, pk):
